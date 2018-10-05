@@ -1,6 +1,8 @@
 import java.util.Arrays;
 import java.util.Random;
 
+// Runtime: O(n)
+
 public class MaxsubarrayLinear {
     public static int[] generateNumbers(int size) {
         int[] numbers = new int[size];
@@ -28,7 +30,7 @@ public class MaxsubarrayLinear {
                 maxLeft = left;
                 maxRight = i;
             } else if (sum < 0) {
-                // If sum is negative, discard everything that has been calculated up to i, and start from i +1
+                // If sum is negative, discard everything(except maxSum) that has been calculated up to i, and start from i +1
                 sum = 0;
                 left = i + 1;
             }
@@ -38,7 +40,8 @@ public class MaxsubarrayLinear {
     }
 
     public static void main(String[] args) {
-        int[] numbers = generateNumbers(7);
+        int[] numbers = generateNumbers(10);
+
         System.out.println("Array: " + Arrays.toString(numbers));
         Result result = maxSubarrayLinear(numbers);
         System.out.println("max left: " + result.maxLeftIndex + ", max right: " + result.maxRightIndex + ", sum: " + result.sum);

@@ -1,9 +1,7 @@
 import java.util.Arrays;
 import java.util.Random;
 
-// Runtime: n lg n
-// To return the left index, right index, and the sum
-
+// Runtime: O(n lg n)
 
 public class MaxSubarray {
     public static int[] generateNumbers(int size) {
@@ -68,12 +66,10 @@ public class MaxSubarray {
 
 
     public static void main(String[] args) {
-        int[] numbers = generateNumbers(7);
+        int[] numbers = generateNumbers(10);
 
         System.out.println("Array: " + Arrays.toString(numbers));
-
         Result result = maxSubarray(numbers, 0, numbers.length - 1);
-
         System.out.println("max left: " + result.maxLeftIndex + ", max right: " + result.maxRightIndex +
                 ", sum: " + result.sum);
     }
