@@ -27,9 +27,9 @@ public class KthLargest {
 
         for (int i = 1; i < num.length; i++) {
             // System.out.println("i : " + i);
-            // loop through largest[] to check whether the num[i] is greater than any of largest[largestlargestIdx]
+            // loop through largest[] to check whether num[i] is greater than any of largest[largestlargestIdx]
             for (int largestlargestIdx = 0; largestlargestIdx < k; largestlargestIdx++) {
-                // If it is, shift the elements of largest[] leftwards, from index k-1 down to largestlargestIdx and
+                // If it is, shift the elements of largest[] rightwards, from index k-1 down to largestlargestIdx and
                 // break away from loop
                 if (num[i] > largest[largestlargestIdx]) {
                     int shift;

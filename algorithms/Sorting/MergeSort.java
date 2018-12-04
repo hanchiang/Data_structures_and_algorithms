@@ -50,7 +50,7 @@ public class MergeSort {
     }
 
     public static void main(String[] args) {
-        int[] numbers = ArrayGenerator.generateNumbers(7);
+        int[] numbers = ArrayGenerator.generateRandomNumbers(7);
 
         System.out.println("Unsorted: " + Arrays.toString(numbers));
         mergesort(numbers, 0, numbers.length-1);

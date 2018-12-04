@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 /*
     function with 2 params: Current permutation so far, and remaining string to permutate
-    Idea: Loop through the string, add the ith character to prefix string, and permutate string without the ith character
+    Idea: Loop through the string, add the ith character to prefix string, and permutate rest of the string without the ith character
     e.g. input = "wes"
     permutate("", "wes")
         permutate("w", "es")

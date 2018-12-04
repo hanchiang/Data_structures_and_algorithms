@@ -16,7 +16,7 @@ public class InsertionSort {
     }
 
     public static void main(String[] args) {
-        int[] numbers = ArrayGenerator.generateNumbers(15);
+        int[] numbers = ArrayGenerator.generateRandomNumbers(15);
          System.out.println("Unsorted: " + Arrays.toString(numbers));
          insertionSort(numbers);
          System.out.println("Sorted: " + Arrays.toString(numbers));

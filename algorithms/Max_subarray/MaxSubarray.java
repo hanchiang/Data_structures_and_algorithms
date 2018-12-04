@@ -66,7 +66,7 @@ public class MaxSubarray {
 
 
     public static void main(String[] args) {
-        int[] numbers = generateNumbers(10);
+        int[] numbers = generateNumbers(5);
 
         System.out.println("Array: " + Arrays.toString(numbers));
         Result result = maxSubarray(numbers, 0, numbers.length - 1);
